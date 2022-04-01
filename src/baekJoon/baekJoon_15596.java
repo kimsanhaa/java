@@ -1,4 +1,6 @@
-public class backjoonWarehouse {
+package baekJoon;
+
+public class baekJoon_15596 {
     //15596 정수 N개의 합
     long sum(int[] a) {
         long ans = 0;
@@ -7,7 +9,4 @@ public class backjoonWarehouse {
         }
         return ans;
     }
-
-    //
-
 }
