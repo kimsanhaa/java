@@ -3,8 +3,6 @@ package algorithm;
 import java.util.Scanner;
 
 public class chap_1 {
-
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("1부터 n까지 합을 구합니다.");
@@ -15,5 +13,6 @@ public class chap_1 {
          sum = sum+i;
         }
         System.out.println(sum);
+
     }
 }
