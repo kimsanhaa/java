@@ -33,6 +33,10 @@ public class map {
             System.out.println(key);
         });
 
+        int [] temp = new int[4];
+        int a = temp.length;
+        System.out.println(a);
+
         // 중복을 제거 HashSet
         // ArrayList
         //

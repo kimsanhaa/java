@@ -42,6 +42,7 @@ public class classStudy {
     public static void main(String[] args) {
         classStudy temp = new classStudy();
         temp.solution(100);
+        System.out.println(1%2);
         
     }
 
