@@ -1,4 +1,4 @@
-package codingTest;
+package algorithm;
 
 public class watermelon {
     public String solution(int n) {

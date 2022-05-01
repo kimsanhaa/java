@@ -1,4 +1,4 @@
-package codingTest;
+package algorithm;
 
 import java.util.ArrayList;
 //4673 셀프넘버

@@ -1,4 +1,4 @@
-package codingTest;
+package algorithm;
 
 public class baekJoon_15596 {
     //15596 정수 N개의 합

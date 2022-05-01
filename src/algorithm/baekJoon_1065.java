@@ -1,4 +1,4 @@
-package codingTest;
+package algorithm;
 
 import java.util.ArrayList;
 import java.util.Scanner;
