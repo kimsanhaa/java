@@ -1,4 +1,4 @@
-package baekJoon;
+package codingTest;
 
 import java.util.ArrayList;
 

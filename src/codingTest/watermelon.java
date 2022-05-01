@@ -1,4 +1,4 @@
-package baekJoon;
+package codingTest;
 
 public class watermelon {
     public String solution(int n) {
@@ -12,15 +12,15 @@ public class watermelon {
             answer= answer+"수";
         }
 
-
         System.out.println(answer);
-
         return answer;
     }
 
     public static void main(String[] args) {
         watermelon watermelon = new watermelon();
-        watermelon.solution(11);
+        //watermelon.solution(11);
+        //watermelon.solution(20);
+        //watermelon.solution(30);
 
     }
 }
