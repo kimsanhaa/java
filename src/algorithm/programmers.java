@@ -28,6 +28,8 @@ public class programmers {
                         System.out.println(report_split[0]+"=>"+report_split[1]); // muzi frodo -> 무지가 프로도 신고함
 
                         //신고 당한 사람 몇번 당했는지 알아보는 로직
+                        //전체를 돌면서 report_split_chcked 변수에 신고를 몇 번 당했는지 넣어준다.
+                        //그 다음에 check값이 k보다 크면 mailnum을 1씩 증가해준다 .
                         for (int j=0; j< report_2.size();j++){ //전체를 돌면서
                             String[] report_split_chcked = report_2.get(j).split(" "); //frodo가 몇번 당했는지 확인
                             if(report_split[1].equals(report_split_chcked[1])){
