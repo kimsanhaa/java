@@ -45,12 +45,13 @@ public class 최소직사각형 {
             bestNum = Collections.max(largeCol);
         }
 
-//        for(int check : listAllProduct){
-//            if(Collections.max(listProduct)<=check && check<=Collections.max(largeRow) * Collections.max(largeCol)&& check%bestNum==0){
-//                answer = check;
-//                break;
-//            }
-    //}
+        for(int check : listAllProduct) {
+            if (Collections.max(listProduct) <= check && check <= Collections.max(largeRow) * Collections.max(largeCol) && check % bestNum == 0) {
+                answer = check;
+                break;
+            }
+        }
+//}
         System.out.println(answer);
         return answer;
 
