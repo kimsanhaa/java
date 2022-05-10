@@ -22,6 +22,7 @@ public class doit_7_주몽의명령 {
         for (int i=0; i<N; i++){
             materialList.add(Integer.parseInt(st.nextToken()));
         }
+
         int startIndex= 0;
         int endIndex = N-1;
         int result = 0;
