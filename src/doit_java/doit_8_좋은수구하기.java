@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.StringTokenizer;
 
 public class doit_8_좋은수구하기 {
@@ -19,27 +20,36 @@ public class doit_8_좋은수구하기 {
             list.add(Integer.parseInt(st.nextToken()));
         }
 
+        Collections.sort(list);
         int result = 0;
-for(int i =3; i<9 ; i++) {
-    int startIndex = 0;
-    int endIndex = n - 1;
-    System.out.println(i + "번째");
-    while (startIndex < endIndex) {
-        if (list.get(i) == list.get(startIndex) + list.get(endIndex)) {
-            result++;
-            startIndex++;
-            endIndex--;
-            System.out.println("check");
+        for(int i=0; i<n; i++) {
+        int startIndex = 0;
+        int endIndex = n - 1;
+        long find = list.get(i);
+        while (startIndex < endIndex) {
+            //find는 서로 다른 두 수의 합이어야 함을 체크
+            if(list.get(startIndex) + list.get(endIndex) == find){
+                if(startIndex!=i && endIndex!=i){
+                    result++;
+                  break;
+                }
+                else if(startIndex==i){
+                    startIndex++;
+                }
+                else{endIndex--;}
+            }
+            else if(list.get(startIndex)+ list.get(endIndex)<find){
+                startIndex++;
+            }
+            else{endIndex--;}
+
         }
-         else if (list.get(i) > list.get(startIndex) + list.get(endIndex)){ startIndex++;
-        System.out.println(">");}
-         else if (list.get(i) < list.get(startIndex) + list.get(endIndex)){  endIndex--;
-            System.out.println("<");}
     }
-}
+        System.out.println(result);
 
 
     }
+
 
 
 }
