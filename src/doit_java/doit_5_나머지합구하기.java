@@ -25,11 +25,7 @@ public class doit_5_나머지합구하기 {
         }
         int cnt=0;
         for(long rep : remainder) if(rep==0) cnt++;
-
-
-
-
-
+        // 0인거 check 까지 완
 
         System.out.println("end");
 

@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class doit_3_구간합구하기 {
     public static void main(String[] args) throws IOException {
         // suNO(수의 개수) QuizNo (합을 구해야 하는 횟수) 선언
-       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int suNo = Integer.parseInt(st.nextToken());
         int QuizNo =Integer.parseInt(st.nextToken());
