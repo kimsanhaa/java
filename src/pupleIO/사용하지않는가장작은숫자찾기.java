@@ -41,6 +41,7 @@ public class 사용하지않는가장작은숫자찾기 {
     public static void main(String[] args) {
         int [] result = new int[]{0,1,2,4};
         사용하지않는가장작은숫자찾기 temp = new 사용하지않는가장작은숫자찾기();
-        temp.Solution(result);
+        int answer = temp.Solution(result);
+        System.out.println(answer);
     }
 }

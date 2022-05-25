@@ -19,7 +19,8 @@ public class 중간숫자찾기 {
     public static void main(String[] args) {
         중간숫자찾기 temp = new 중간숫자찾기();
         int [] list = new int[]{5,1,2};
-        int solution = temp.Solution(list);
+        int answer = temp.Solution(list);
+        System.out.println(answer);
     }
 
 }

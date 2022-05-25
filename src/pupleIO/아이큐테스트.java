@@ -43,6 +43,7 @@ public class 아이큐테스트 {
     public static void main(String[] args) {
         아이큐테스트 temp = new 아이큐테스트();
         String numbers = "1 2 1 1";
-        temp.Solution(numbers);
+        String answer = temp.Solution(numbers);
+        System.out.println(answer);
     }
 }

@@ -20,7 +20,8 @@ public class 승점구하기 {
     public static void main(String[] args) {
         승점구하기 temp = new 승점구하기();
         String []  score = new String[]{"3:1","2:2","1:3"};
-        int solution = temp.Solution(score);
+        int answer = temp.Solution(score);
+        System.out.println(answer);
 
     }
 }

@@ -15,7 +15,8 @@ public class 모음찾기 {
     public static void main(String[] args) {
         모음찾기 temp = new 모음찾기();
         String str = "abracadabra";
-        temp.Solution(str);
+        int answer = temp.Solution(str);
+        System.out.println(answer);
 
     }
 }

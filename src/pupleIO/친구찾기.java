@@ -16,7 +16,8 @@ public class 친구찾기 {
     public static void main(String[] args) {
         친구찾기 temp = new 친구찾기();
         String [] users= new String[]{"Ryan", "Kieran", "Mark"};
-        temp.Solution(users);
+        ArrayList<String> answer = temp.Solution(users);
+        System.out.println(answer.toString());
 
     }
 }
