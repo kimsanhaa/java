@@ -17,6 +17,7 @@ public class doit_14_절대값힙구현하기 {
             int firstAbs = Math.abs(o1);
             int secondAbs = Math.abs(o2);
             if(firstAbs==secondAbs){
+                //
                 return o1>o2 ? 1 :-1;
             }
             else {
