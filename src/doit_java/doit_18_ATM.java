@@ -22,16 +22,7 @@ public class doit_18_ATM {
 
 
         //정렬하기
-        for(int i=0; i<N; i++) {
-            int Min = list[i];
-            for (int j = i; j < N; j++) {
-                if (Min > list[j]) {
-                    Min = list[j];
-                    list[j]=list[i];
-                    list[i]=Min;
-                }
-            }
-        }
+        replace(N, list);
         int num=0;
         for (int i = 0; i < N; i++) {
            check[i]= num=list[i]+num;
@@ -51,6 +42,21 @@ public class doit_18_ATM {
 
 
 
+
+
         System.out.println("end");
+    }
+
+    private static void replace(int N, int[] list) {
+        for(int i = 0; i< N; i++) {
+            int Min = list[i];
+            for (int j = i; j < N; j++) {
+                if (Min > list[j]) {
+                    Min = list[j];
+                    list[j]= list[i];
+                    list[i]=Min;
+                }
+            }
+        }
     }
 }
