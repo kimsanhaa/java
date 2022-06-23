@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class doit_19_연결요소의개수구하기 {
+public class doit_23_연결요소의개수구하기 {
     static ArrayList<Integer>[] A;
     static boolean visited[];
 
