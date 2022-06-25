@@ -49,18 +49,28 @@ public class doit_34_수를묶어서최댓값만들기 {
         if(!postiveNum.isEmpty()){
             sum= sum+ postiveNum.remove();
         }
+
+
         // 음수 우선순위 큐
         while(negativeNum.size() >1){
             int num1= negativeNum.remove();
             int num2= negativeNum.remove();
             sum=sum+ num1*num2;
         }
+        System.out.println(negativeNum.size()); //ne
+        System.out.println("sum=="+sum);
         if(!negativeNum.isEmpty()){
-            if(zero==0) sum= sum+ negativeNum.remove();
+            System.out.println("netative empty");
+            if(zero==0){
+                System.out.println("zero==0");
+                sum= sum+ negativeNum.remove();
+            };
+            System.out.println(negativeNum.size());
+            System.out.println("sum=12="+sum);
         }
 
         sum = sum+one;
-
+        System.out.println(negativeNum.size());
         System.out.println(sum);
 
 
