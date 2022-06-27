@@ -9,19 +9,19 @@ public class doit_38_나머지합구하기 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int start = Integer.parseInt(st.nextToken());
-        int end =  Integer.parseInt(st.nextToken());
+        long start = Long.parseLong(st.nextToken());
+        long end =  Long.parseLong(st.nextToken());
         long [] list = new long[10000001];
-        int cnt=0;
+
         //배열 생성하기
-        for(int i=2; i<=end; i++){
+        for(int i=2; i<list.length; i++){
             list[i]=i;
         }
 
         //제곱근 까지만 확인하기
-        for(int i=2; i<=Math.sqrt(end); i++){
+        for(int i=2; i<=Math.sqrt(list.length); i++){
             if(list[i]==0) continue;
-            for(int j=i+i;j<=end;j=j+i){
+            for(int j=i+i;j<list.length;j=j+i){
                 list[j]=0;
             }
         }
@@ -41,7 +41,7 @@ public class doit_38_나머지합구하기 {
 
 
 
-        System.out.println("end");
+        System.out.println(count);
 
 
 
