@@ -88,12 +88,14 @@ class Solution {
         MARK = Integer.parseInt(st.nextToken());
 
         for (int testcase = 1; testcase <= TC; ++testcase) {
+            long start = System.currentTimeMillis();
             int score = run(br) ? MARK : 0;
             System.out.println("#" + testcase + " " + score);
+            long end = System.currentTimeMillis();
+            System.out.println("실행시간 ="+(end-start)/1000.0+"초");
         }
 
         br.close();
-        UserSolution temp = new UserSolution();
 
 
     }
