@@ -27,15 +27,19 @@ package samsung.day_1;
 //System.out.println(var);		       				   // 문자열 1개 출력하는 예제
 //System.out.println(AB);		       				     // long 변수 1개 출력하는 예제
 /////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.ArrayList;
+
 import java.util.Scanner;
-import java.io.FileInputStream;
+
 
 /*
    사용하는 클래스명이 Solution 이어야 하므로, 가급적 Solution.java 를 사용할 것을 권장합니다.
    이러한 상황에서도 동일하게 java Solution 명령으로 프로그램을 수행해볼 수 있습니다.
  */
 class Solution
+
 {
+   static  ArrayList<ArrayList<String>>  List = new ArrayList<ArrayList<String>>();
     public static void main(String args[]) throws Exception
     {
 		/*
@@ -56,16 +60,82 @@ class Solution
 		/*
 		   여러 개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 		*/
+        String[] arr = {"A", "B", "C","D"}; //조합을 만들 배열
+        boolean[] visited = new boolean[arr.length];
+
+
+        for(int r = 1; r <= arr.length ; r++) {
+            comb2(arr, visited, 0, r);
+        }
+
+
 
         for(int test_case = 1; test_case <= T; test_case++)
         {
-            String Responsibility = sc.next();
-            //1일차
-            System.out.println(Responsibility);
+            String ResponsibilityList = sc.next();
+            char[] chars = ResponsibilityList.toCharArray();
+            int day=1;
+            int cnt=0;
+            String key="A";
+            String Responsibility= String.valueOf(chars[day-1]);
+            ArrayList<ArrayList<String>> userList = new ArrayList<ArrayList<String>>();
+
+            if(day==1){
+                for (ArrayList<String> arrayList : List) {
+                    if(arrayList.contains(key) &&arrayList.contains(Responsibility)){
+                        userList.add(arrayList);
+                    }
+                }
+            }else{
+                while(day== chars.length){
+                    day++;
+
+                }
+            }
+
+
+
+
+
+
             System.out.println("end");
 
 
 
+
+
+        }
+
+    }
+
+
+
+    static void comb2(String[] arr, boolean[] visited, int depth, int r) {
+        if(r == 0) {
+            save(arr, visited);
+            return;
+        }
+        if(depth == arr.length) {
+            return;
+        } else {
+            visited[depth] = true;
+            comb2(arr, visited, depth + 1, r - 1);
+
+            visited[depth] = false;
+            comb2(arr, visited, depth + 1, r);
         }
     }
+
+    // 배열 출력
+    static void save(String[] arr, boolean[] visited) {
+        ArrayList<String>saveString=new ArrayList<>();
+        for(int i = 0; i < arr.length; i++) {
+            if(visited[i] == true){
+                saveString.add(arr[i]);
+            }
+
+        }
+       List.add(saveString);
+    }
+
 }
