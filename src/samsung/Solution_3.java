@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-class Solution {
+class Solution_3 {
     private final static int CMD_INIT = 100;
     private final static int CMD_ADD = 200;
     private final static int CMD_REMOVE = 300;
